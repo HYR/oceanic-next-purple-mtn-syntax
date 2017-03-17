@@ -1,21 +1,25 @@
 @import "syntax-variables";
 
-atom-text-editor, atom-text-editor {
+atom-text-editor.is-focused, 
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter, atom-text-editor .gutter {
+atom-text-editor.is-focused .gutter,
+atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line, atom-text-editor .gutter .line-number.cursor-line {
+atom-text-editor.is-focused .gutter .line-number.cursor-line,
+atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection, atom-text-editor .gutter .line-number.cursor-line-no-selection {
+atom-text-editor.is-focused .gutter .line-number.cursor-line-no-selection,
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
@@ -27,17 +31,19 @@ atom-text-editor .indent-guide, atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-
-atom-text-editor .invisible-character, atom-text-editor .invisible-character {
+atom-text-editor.is-focusted .invisible-character,
+atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .syntax--marker .region, atom-text-editor .search-results .syntax--marker .region {
+atom-text-editor.is-focused .search-results .syntax--marker .region,
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .syntax--marker.current-result .region, atom-text-editor .search-results .syntax--marker.current-result .region {
+atom-text-editor.is-focused .search-results .syntax--marker.current-result .region,
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
@@ -45,13 +51,17 @@ atom-text-editor.is-focused .cursor, atom-text-editor .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, atom-text-editor .selection .region {
+atom-text-editor.is-focused .selection .region,
+atom-text-editor .selection .region {
   background-color: @syntax-selection-color;
 }
 
-// atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, atom-text-editor(.is-focused) .line-number.cursor-line-no-selection, atom-text-editor(.is-focused) .line.cursor-line {
-//   background-color: rgba(101, 115, 126, 0.33);
-// }
+atom-text-editor.is-focused .line-number.cursor-line-no-selection,
+atom-text-editor.is-focused .line.cursor-line,
+atom-text-editor .line-number.cursor-line-no-selection,
+atom-text-editor .line.cursor-line {
+  background-color: rgba(101, 115, 126, 0.33);
+}
 
 .syntax--comment, .syntax--punctuation.syntax--definition.syntax--comment {
   color: #65737e;
