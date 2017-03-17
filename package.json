@@ -1,7 +1,7 @@
 {
   "name": "oceanic-next-purple-mtn",
   "theme": "syntax",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Oceanic-next color scheme with purple background. Fixes deprecation warnings.",
   "repository": "https://github.com/HYR/oceanic-next-purple-mtn-syntax.git",
   "license": "MIT",
