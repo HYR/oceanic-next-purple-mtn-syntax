@@ -41,17 +41,17 @@ atom-text-editor .search-results .syntax--marker.current-result .region, atom-te
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor, atom-text-editor(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor, atom-text-editor .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, atom-text-editor(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region, atom-text-editor .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, atom-text-editor(.is-focused) .line-number.cursor-line-no-selection, atom-text-editor(.is-focused) .line.cursor-line {
-  background-color: rgba(101, 115, 126, 0.33);
-}
+// atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, atom-text-editor(.is-focused) .line-number.cursor-line-no-selection, atom-text-editor(.is-focused) .line.cursor-line {
+//   background-color: rgba(101, 115, 126, 0.33);
+// }
 
 .syntax--comment, .syntax--punctuation.syntax--definition.syntax--comment {
   color: #65737e;
